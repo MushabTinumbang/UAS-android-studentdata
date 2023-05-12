@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/l_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/shape" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/d_ly_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_txt_1"
+            android:text="username"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="18dp"
+            android:gravity="right"
+            android:id="@+id/logout"
+            android:textAlignment="gravity"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/d_txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_ly_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Database Mahasiswa"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/d_search"
+        android:layout_width="275dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/d_txt_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/getstarted"
+        android:backgroundTint="@color/white"
+        android:hint="Search"
+        android:paddingLeft="15dp"
+        android:textSize="15dp" />
+    <ListView
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item"
+        android:divider="@null"/>
+
+</RelativeLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ds_img_1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ds_ly_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_txt_1"
+            android:text="zanogod"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="18dp"
+            android:gravity="right"
+            android:id="@+id/logout"
+            android:textAlignment="gravity"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clock"
+        android:format12Hour="hh:mm:ss"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ds_ly_1"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_marginTop="100dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/clock"
+        android:id="@+id/ds_FL1"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_ly_2"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Subuh"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:id="@+id/editSubuh"
+                android:layout_marginTop="20dp"
+                android:textAlignment="gravity"
+                android:text="4.09"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Dzuhur"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:id="@+id/editDzuhur"
+                android:layout_marginTop="20dp"
+                android:textAlignment="gravity"
+                android:text="4.09"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Ashar"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:id="@+id/editAshar"
+                android:layout_marginTop="20dp"
+                android:textAlignment="gravity"
+                android:text="4.09"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Maghrib"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:id="@+id/editMaghrib"
+                android:layout_marginTop="20dp"
+                android:textAlignment="gravity"
+                android:text="4.09"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Isya"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:id="@+id/editIsya"
+                android:layout_marginTop="20dp"
+                android:textAlignment="gravity"
+                android:text="4.09"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        
+    </FrameLayout>
+
+    <TextView
+        android:layout_width= "350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ds_FL1"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:text='"Siapa saja yang menjaga sholat maka dia akan mendapatkan cahaya, petunjuk dan keselamatan pada hari kiamat. Sedangkan, siapa saja yang tidak menjaga sholat, dia tidak akan mendapatkan cahaya, petunjuk dan keselamatan. Dan pada hari kiamat nanti, dia akan dikumpulkan bersama dengan Qarun, Firaun, Haman, dan Ubay bin Khalaf."'
+        android:textAlignment="center"/>
+
+</RelativeLayout>
